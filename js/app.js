@@ -1,5 +1,6 @@
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
+const body = document.querySelector("body");
 
 const hex = [
   "0",
@@ -21,7 +22,7 @@ const hex = [
 ];
 btn.addEventListener("click", () => {
   let hexColor = generateHex();
-  document.body.style.backgroundColor = hexColor;
+  body.style.backgroundColor = hexColor;
   color.textContent = hexColor;
   color.style.color = hexColor;
 });
